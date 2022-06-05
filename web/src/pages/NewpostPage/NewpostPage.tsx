@@ -35,7 +35,7 @@ const NewpostPage = () => {
     try {
       await create({
         variables: {
-          input: { ...data, userId: currentUser.id },
+          input: { ...data, authorId: currentUser.id },
         },
       })
       toast('Post created!')
